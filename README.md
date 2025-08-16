@@ -118,6 +118,23 @@ Connections as setup in example  file.
 
 [![Image SSD](https://github.com/gavinlyonsrepo/Display_Lib_RPI/blob/main/extra/images/ssd1331.jpg)](https://github.com/gavinlyonsrepo/Display_Lib_RPI/blob/main/extra/images/ssd1331.jpg)
 
+## Tested
+
+Tested with both software and hardware SPI on:
+
+- **ESP32**
+- **Arduino UNO R4 Minima**  
+ 
+Compiled only (not fully hardware-tested) on:
+
+- **Arduino UNO**
+- **ESP8266**
+- **STM32 “Blue Pill”**
+- **RP2040 PICO**
+
+> Some examples on low-RAM MCUs will fail( insufficient memory ), if numerous fonts and bitmap data are included.  
+> Frame buffer mode example requires sufficient dynamic memory for the buffer — see the README in display16_LTSM for details.
+
 ## Output
 
 [![ demo pic 2](https://github.com/gavinlyonsrepo/Display_Lib_RPI/blob/main/extra/images/ssd1331output.jpg)](https://github.com/gavinlyonsrepo/Display_Lib_RPI/blob/main/extra/images/ssd1331output.jpg)
