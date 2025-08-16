@@ -1,0 +1,59 @@
+#######################################
+# Syntax Coloring Map For SSD1331
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+SSD1331_LTSM	KEYWORD1
+scroll_time_interval_e	KEYWORD1
+scroll_control_e	KEYWORD1
+color_order_e	KEYWORD1
+display_mode_e	KEYWORD1
+Constrast_values_t	KEYWORD1
+Dim_Constrast_values_t	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+SetupGPIO_SPI	KEYWORD2
+InitScreenSize	KEYWORD2
+SSD1331Initialize	KEYWORD2
+ResetPin	KEYWORD2
+HighFreqDelayGet	KEYWORD2
+HighFreqDelaySet	KEYWORD2
+PowerDown	KEYWORD2
+setRotation	KEYWORD2
+changeDisplayMode	KEYWORD2
+DimDisplay	KEYWORD2
+enableDisplay	KEYWORD2
+sleepDisplay	KEYWORD2
+ClearWindowCmd	KEYWORD2
+CopyWindowCmd	KEYWORD2
+DimWindowCmd	KEYWORD2
+DrawLineCmd	KEYWORD2
+DrawRectCmd	KEYWORD2
+Scroll	KEYWORD2
+ScrollSetup	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+
+SCROLL_FRAME_6	LITERAL1
+SCROLL_FRAME_10	LITERAL1
+SCROLL_FRAME_100	LITERAL1
+SCROLL_FRAME_200	LITERAL1
+
+SCROLL_ACTIVATE	LITERAL1
+SCROLL_DEACTIVE	LITERAL1
+
+COLORORDER_RGB	LITERAL1
+COLORORDER_BGR	LITERAL1
+
+DISPLAY_INVERSE	LITERAL1
+DISPLAY_NORMAL	LITERAL1
+DISPLAY_ALL_ON	LITERAL1
+DISPLAY_ALL_OFF	LITERAL1
