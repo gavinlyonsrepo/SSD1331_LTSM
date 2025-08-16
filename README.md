@@ -71,7 +71,7 @@ where user can make adjustments. The constructor also takes a number of argument
 *User Option  Color and contrast settings*
 
 Here the user can select RGB or BGR mode depending on type of display, They can also
-set the color contrast levels for the 3 channels (A B and C) for normal and Dim mode.
+set the color contrast levels for the 3 channels (A B and C) for normal and dim mode.
 The range is 0-255. 
 
 *User Option SPI Settings* 
@@ -80,7 +80,7 @@ Here the user can pass the SPI Bus freq in Hertz.
 If users wants software SPI just call this method 
 with just one argument for the optional GPIO software uS delay,
 which by default is zero. Setting this higher can be used to slow down Software SPI 
-which may be beneficial in some setups.  
+which may be beneficial in some setups.
 Set the five GPIO pins. If using Hardware SPI: clock and data pins will be tied to 
 the chosen interface on MCU.
 
@@ -97,7 +97,7 @@ There are 5 example files included.
 | HELLO WORLD | Hello world basic use case | --- |
 | MISC| Text, Graphics & Functions | dislib16 ADVANCED GRAPHICS ENABLE must be enabled for all tests to work|
 | BITMAP_FUNC | bitmaps + Functions tests | Bitmap test data is stored in arrays |
-| DEMO| A demo  dislib16 ADVANCED GRAPHICS ENABLE must be enabled |
+| DEMO| A demo | dislib16 ADVANCED GRAPHICS ENABLE must be enabled |
 | FRAME BUFFER | Testing frame Buffer mode | dislib16 ADVANCED SCREEN BUFFER ENABLE must be enabled user option 2 |
 
 ## Hardware
@@ -110,11 +110,11 @@ Connections as setup in example  file.
 | 2 | VCC | VCC 3.3V | VCC 3.3V  |
 | 3 | SCLK | MCU SPI CLK | GPIO12 |
 | 4 | SDA | MCU SPI_MOSI | GPIO13 |
-| 5 | RESET | GPI05  | GPIO5 |
-| 6 | DC | GPIO4 | GPIO4  |
-| 7 | CS | GPIO15  | GPIO215|
+| 5 | RESET | GPI04 | GPIO4 |
+| 6 | DC | GPIO5 | GPIO5 |
+| 7 | CS | GPIO15  | GPIO15|
 
-1. Pick any GPIO you want for SW SPI, for HW SPI SCLK and SDA will be tied to MCU SPI interface.
+1. Pick any GPIO you want for SW SPI, for HW SPI SCLK and MOSI will be tied to MCU SPI interface pins.
 
 [![Image SSD](https://github.com/gavinlyonsrepo/Display_Lib_RPI/blob/main/extra/images/ssd1331.jpg)](https://github.com/gavinlyonsrepo/Display_Lib_RPI/blob/main/extra/images/ssd1331.jpg)
 
