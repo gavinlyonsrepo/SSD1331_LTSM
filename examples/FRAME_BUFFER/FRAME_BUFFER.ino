@@ -6,7 +6,7 @@
 			    dislib16_ADVANCED_SCREEN_BUFFER_ENABLE must be enabled for this example
 			    or it will not compile 
 	@test
-		-# tTest 1500 Frame buffer mode.
+		-# Test 1500 Frame buffer mode.
 */
 
 // libraries

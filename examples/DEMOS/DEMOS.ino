@@ -3,9 +3,11 @@
 	@brief   Demo hardware SPI test, SSD1331_LTSM, OLED, arduino library
 	@author  Gavin Lyons.
 	@details See USER OPTIONS 1-2 in SETUP function and in myOLED constructor
-			    If dislib16_ADVANCED_GRAPHICS_ENABLE is not enabled it will not compile
+			 If dislib16_ADVANCED_GRAPHICS_ENABLE is not enabled it will not compile
+			 dislib16_ADVANCED_GRAPHICS_ENABLE is defined in file display16_common_LTSM.hpp 
+			 in display16_LTSM library.
 	@test 
-		-# 401 Radar demo
+		-# Test 401 Radar demo
 */
 
 #include "SSD1331_LTSM.hpp"

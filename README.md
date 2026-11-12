@@ -92,7 +92,11 @@ There are example files included.
 | HELLO WORLD | Hello world basic use case | --- |
 | MISC | Text, Graphics & Functions | dislib16 ADVANCED GRAPHICS ENABLE must be enabled for all tests to work|
 | BITMAP FUNC | bitmaps + Functions tests | Bitmap test data is stored in arrays |
-| DEMO | A demo | dislib16 ADVANCED GRAPHICS ENABLE must be enabled |
+| DEMOS | A simple radar demo | dislib16 ADVANCED GRAPHICS ENABLE must be enabled |
+| DEMOS_2  | An analog clock demo | --- |
+| DEMOS_3  | A digital clock demo | --- |
+| DEMOS_4  | A VU demo | --- |
+| DEMOS_5  | A signal generator demo | --- |
 | FRAME BUFFER | Testing frame Buffer mode | dislib16 ADVANCED SCREEN BUFFER ENABLE must be enabled |
 
 ### Setup
