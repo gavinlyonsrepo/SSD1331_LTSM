@@ -4,7 +4,8 @@
 	@brief  Example  file for SSD1331_LTSM library. Tests  frame buffer mode
 	@note   See USER OPTIONS 1-2 in SETUP function
 			    dislib16_ADVANCED_SCREEN_BUFFER_ENABLE must be enabled for this example
-			    or it will not compile 
+			    or it will not compile, This setting is in library display16_LTSM, display16_common_LTSM.hpp ,  
+			    User Options section.
 	@test
 		-# Test 1500 Frame buffer mode.
 */
@@ -56,10 +57,14 @@ void setup(void) {
   // ===
   myOLED.SSD1331Initialize();
   delay(100);
+  // Set rotation BEFORE setBuffer(): the buffer is laid out for the display's
+  // current width and height. On a display where width != height, call
+  // setBuffer() again after every rotation change.
+  myOLED.setRotation(myOLED.Degrees_0); // Degrees_0 is the default, shown for clarity
   if (myOLED.setBuffer() != DisLib16::Success) {
     Serial.println("set up buffer error");
     while (1) {};
-  } else {
+  }else {
     myOLED.setTextCharPixelOrBuffer(true);  // set to use pixel mode for text
     Serial.println("Start");
   }
